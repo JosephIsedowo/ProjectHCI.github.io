@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Info Page</title>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="info-page">
+            <h1>Please fill in the following details</h1>
+            <form #infoForm="ngForm" style="padding-bottom: 0;">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input required type="text" name="name" class="form-control" id="username" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="participantId">Participant ID</label>
+                    <input required type="text" name="id" class="form-control" id="participantId"
+                        placeholder="Enter Participant ID">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="type">Participant Type</label>
+                    <select required class="form-control"  name="type" id="type">
+                        <option></option>
+                        <option>Yourself</option>
+                        <option>Someone like you</option>
+                        <option>Someone NOT like you</option>
+                        <option>Optional participant</option>
+                    </select>
+                </div> -->
+                <div class="form-group">
+                    <label for="scrolling_tech">Scrolling Techniques </label>
+                    <select required class="form-control"  name="experience" id="tech">
+                        <option></option>
+                        <option>Scrollbar by pressing arrow buttons</option>
+                        <option>Scrollbar by dragging the thumb</option>
+                        <option>Scrolling by dragging or flicking the content with your finger on a touchscreen</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Level of Experience</label>
+                    <select required class="form-control"  name="experience" id="experience">
+                        <option></option>
+                        <option>1=Never used this scrolling technique before today</option>
+                        <option>2=Used a scrolling technique like this in the past, but not in the last year</option>
+                        <option>3=Have used this scrolling technique occasionally in the last year</option>
+                        <option>4=Use this scrolling technique frequently (at least once a week) but not every time</option>
+                        <option>5=This is the main kind of scrolling technique I use (use every day)</option>
+                    </select>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="type">Target Area Height</label>
+                    <select required class="form-control"  name="height" id="height">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div> -->
+                <div class="form-group">
+                    <label for="switch">Switch mode</label>
+                    <select required class="form-control"  name="autoswitch" id="autoswitch">
+                        <option>Auto switch</option>
+                        <option>Click to switch</option>
+                    </select>
+                </div>
+            </form>
+            <!-- <button style="margin-top: 15px;" class="btn-main" [disabled]="!infoForm.valid" (click)="demo()">Demo Run</button> -->
+            <button style="margin-top: 15px;" class="btn-main" disabled id="btn-demo">Demo Test</button>
+            <button style="margin-top: 15px;" class="btn-main" disabled id="btn-formal">Formal Test</button>
+        </div>
+        
+        <link rel="stylesheet" href="./info-styles.css">
+        <script src="./show-info.js"></script>
+
+    </body>
+
+</html>

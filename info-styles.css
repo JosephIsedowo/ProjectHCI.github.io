@@ -1,0 +1,39 @@
+.info-page {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+        width:100%;
+        max-width: 500px;
+        padding: 30px 0;
+    }
+.form-group {
+    width:100%;
+}
+button {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: rgb(187, 187, 187);
+    color: white;
+    border-radius: 4px;
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    body{
+        font-size: 18pt;
+    }
+    button {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    small {
+        font-size: 0.7em;
+    }
+}

@@ -1,0 +1,74 @@
+h1 {
+    margin-bottom: 30px;
+}
+.results-area {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title {
+    width: 100%;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    color: #333;
+    padding: 0 15px;
+}
+
+.result {
+width: 100%;
+border-top: 1px solid rgba(0,0,0,0.10);
+padding: 30px 30px 15px 30px;
+}
+.pair-wrapper {
+width: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-flow: row wrap;
+}
+.key-value-pair {
+    padding: 15px 15px 5px 15px;
+    min-width: 16%;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+.key {
+        font-weight: bold;
+        font-size: small;
+        margin: 0;
+        color: #707070
+}
+.value {
+    font-weight: 300;
+    font-size: large;
+    margin: 0;
+}
+
+button {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    label.title {
+        padding: 0 5px;
+        margin: 10px 0;
+    }
+    .result {
+        padding: 15px 15px 15px 15px;
+    }
+    .key-value-pair {
+        padding: 10px 5px 5px 5px;
+        min-width: 50%;
+    }
+    button{
+        margin-left: 5px;
+    }
+}

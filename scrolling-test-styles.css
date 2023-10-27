@@ -1,0 +1,112 @@
+body{
+    margin:0;
+    background-color: rgb(131, 131, 131);
+}
+
+.grey_mask{
+    background-color: rgba(87, 87, 87, 0.75);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+}
+
+
+.show-grey_mask{
+    visibility: visible;
+}
+
+#grey_area{
+    background-color: rgba(145, 145, 145, 0.308);
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-text{
+    padding-left:1em;
+    padding-right:1em;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 12px;
+    border-color: #333;
+    border-width: 0.1em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    /* text-align: center; */
+    padding: 30px 30px 30px;
+    color:#333;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    visibility: hidden;
+    z-index: 1;
+    /* transition: transform 0.4s, top 0.4s; */
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: rgb(255, 180, 42);
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-text{
+        font-size: 10pt;
+    }
+    /* #btn-start {
+        font-size: 20pt;
+        margin-top:20pt;
+        margin-left:-25pt;
+    } */
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .navbar-text{
+        font-size: 18pt;
+        margin-top: 15pt;
+    }
+    #btn-start {
+        font-size: 20pt;
+        margin-top:10pt;
+        margin-left:-25pt;
+    }
+}
+
+
+
+
+

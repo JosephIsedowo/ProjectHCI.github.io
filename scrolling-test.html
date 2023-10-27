@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Scrolling Test Page</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script> -->
+    </head>
+
+    <body>
+        <!-- navigation bar -->
+        <div>
+            <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <p class="navbar-text" id="p-1" style="color:white; display: block;" >
+                                Scrolling test: <strong class="num">1</strong> | Scroll up to land the stars in the grey area.
+                            </p>
+                            <p class="navbar-text" id="p-2" style="color:white; display: none;" >
+                                Scrolling test: <strong class="num">1</strong> | Scroll up to land <strong style="color:rgb(255, 180, 42);">LINE</strong> <strong id="line_num" style="color:rgb(255, 180, 42);">10</strong> in the grey area.
+                            </p>
+                        </div>
+                        <!-- <div class="col-xs-2">
+                            <button id="btn-start" class="btn btn-warning navbar-btn">start</button>
+                        </div> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="popup" id="pop-tutorial">
+            <h2>Tutorial</h2>
+            <p style="display:inline"> In this study, your task is to get one or more scrolling techniques to land either the row of stars or a specific line precisely within the target grey area situated at the center of the webpage.<br/><br/>
+
+                Your objective is to get the row of stars or the specific line, as indicated in the black banner at the top of the page, into the designated grey area. It's crucial to halt your scrolling when the target is fully contained within the grey area, rather than merely scrolling past it. Both the location of the stars row and the target line numbers will vary, and the dimensions of the grey area will also change. <br/><br/>
+                
+                In the demo test, you will be given eight <p id="trial_num_demo" style="display:inline"></p> opportunities to acquaint yourself with this test. 
+               subsequently, you will participate in a formal test with <p id="trial_num_formal" style="display:inline">12</p> trials. <br/><br/>
+
+              
+            </p>
+            <button type="button" id="btn-close">Next</button>
+        </div>
+
+        <div class="popup" id="pop-window">
+            <h2>Start Test</h2>
+            <p>Click start and scroll the target to the grey area as quickly as possible.</p>
+            <button type="button" id="btn-start">Start</button>
+        </div>
+
+        <div class="popup" id="pop-switch">
+            <h2>Attention</h2>
+            <p>Now you will be told what line to scroll to, and there won't be any stars on that line. The target line is displayed in the black banner at the top.</p>
+            <button type="button" id="btn-close-switch">Next</button>
+        </div>
+
+        <div class="popup" id="pop-end">
+            <h2>End Test</h2>
+            <p>Congratulations! You have completed this round of the study. 
+                If this was a demo run or if you have another round of the study to do, click Back. 
+                Otherwise click Questionnaire to provide your feedback about the scrolling techniques.</p>
+            <button type="button" id="btn-back">Back</button>
+            <button type="button" id="btn-questionnaire">Questionnaire</button>
+        </div>
+
+        <div class="grey_mask" id="grey_mask"></div>
+        <div id="grey_area" style="pointer-events: none; touch-action: none;"></div>
+
+        <!-- svg shapes -->
+        <div id="svg-container" style="overflow-y:auto;">
+            <svg id="svg" viewBox="0 0 1000 10100" preserveAspectRatio="none"></svg>
+        </div>
+        
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="./scrolling-test-styles.css">
+
+    </body>
+
+</html>
