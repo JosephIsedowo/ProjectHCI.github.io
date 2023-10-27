@@ -1,5 +1,6 @@
 body{
     margin:0;
+     height: 100%;
     background-color: rgb(131, 131, 131);
 }
 
@@ -83,9 +84,9 @@ body{
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
-@media only screen and (display-mode: fullscreen) {
+@media only screen and (max-width: 768px) {
     .navbar-text{
-        font-size: 70pt;
+        font-size: 10pt;
     }
     /* #btn-start {
         font-size: 20pt;
