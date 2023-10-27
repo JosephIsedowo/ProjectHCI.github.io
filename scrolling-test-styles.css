@@ -85,7 +85,7 @@ body{
 
 @media only screen and (display-mode: fullscreen) {
     .navbar-text{
-        font-size: 10pt;
+        font-size: 70pt;
     }
     /* #btn-start {
         font-size: 20pt;
