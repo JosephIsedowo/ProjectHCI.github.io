@@ -27,7 +27,7 @@ body{
     padding-left:1em;
     padding-right:1em;
 }
-.svg{
+svg{
     min-width: 100vw !important;
     width: 100vw !important;
   }
