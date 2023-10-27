@@ -27,10 +27,7 @@ body{
     padding-left:1em;
     padding-right:1em;
 }
-svg{
-    min-width: 100vw !important;
-    width: 100vw !important;
-  }
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
