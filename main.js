@@ -456,13 +456,13 @@ function isTargetInGreyArea() {
                 $("#btn-back").click(function(){
                     sendData2GoogleSheet(data);
                     closePop(popend);
-                    location.href='./info.html';
+                    location.href='./legacy_code/result.html';
                 })
                 $("#btn-questionnaire").click(function(){
                     window.open("https://forms.gle/ob1KexoruTXrjZYy9");
                     sendData2GoogleSheet(data);
                     closePop(popend);
-                    location.href='./info.html';
+                    location.href='./legacy_code/result.html';
                 })
             }
         }
