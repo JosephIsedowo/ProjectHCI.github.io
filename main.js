@@ -459,7 +459,7 @@ function isTargetInGreyArea() {
                     location.href='./legacy_code/result.html';
                 })
                 $("#btn-questionnaire").click(function(){
-                    window.open("https://forms.gle/F55wuP9FF2LP3GHQ7");
+                    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeNe6CmGcnxC8h7EdvndWxIgWJWtSqiqyD5N_IGYOfG2K1G-w/viewform?pli=1");
                     sendData2GoogleSheet(data);
                     closePop(popend);
                     location.href='./legacy_code/result.html';
